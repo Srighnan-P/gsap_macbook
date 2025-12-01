@@ -5,7 +5,7 @@ import React, {useEffect, useRef} from 'react'
 
 
 const Hero = () => {
-    const videoRef = useRef<HTMLVideoElement>(null);
+    const videoRef = useRef(null);
 
     useEffect(() => {
         if (videoRef.current) {
