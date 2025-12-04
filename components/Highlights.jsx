@@ -58,4 +58,4 @@ const Highlights = () => {
         </section>
     );
 }
-export default Highlights
+export default Highlights;
