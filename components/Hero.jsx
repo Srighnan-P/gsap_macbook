@@ -17,7 +17,7 @@ const Hero = () => {
         <section id='hero'>
             <div>
                 <h1>MacBook Pro M4</h1>
-                <Image src="/title.png" alt="MacBook Title" width={700} height={400} />
+                <Image src="/title.png" alt="MacBook Title" width={700} height={400} priority />
             </div>
             <video ref={videoRef} src="/videos/hero.mp4" autoPlay muted playsInline/>
             <button>Buy</button>

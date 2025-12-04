@@ -3,10 +3,15 @@
 import useMacbookStore from '@/store'
 import { Canvas } from '@react-three/fiber'
 import clsx from 'clsx'
+import dynamic from 'next/dynamic'
 
 import StudioLights from './three/StudioLights'
-import ModelSwitcher from './three/ModelSwitcher'
+// import ModelSwitcher from './three/ModelSwitcher'
 import { useMediaQuery } from 'react-responsive'
+
+const ModelSwitcher = dynamic(() => import('./three/ModelSwitcher'), { 
+    ssr: false,
+})
 
 const ProductViewer = () => {
 

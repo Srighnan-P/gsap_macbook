@@ -1,10 +1,12 @@
-import { PresentationControls } from '@react-three/drei';
+import { PresentationControls, useGLTF } from '@react-three/drei';
 import React, { useRef } from 'react'
 import MacbookModel16 from '../models/Macbook-16';
 import MacbookModel14 from '../models/Macbook-14';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
+useGLTF.preload('/models/macbook-14-transformed.glb');
+useGLTF.preload('/models/macbook-16-transformed.glb');
 
 const ANIMATION_DURATION = 1;
 const OFFSET_DISTANCE = 5;
