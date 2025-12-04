@@ -56,6 +56,6 @@ const Highlights = () => {
                 </div>
             </div>
         </section>
-    )
+    );
 }
 export default Highlights
